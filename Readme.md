@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Mary Ann](https://up.htmlacademy.ru/htmlcss/29/user/1539187).
-* Наставник: `Неизвестно`.
+* Наставник: [Борис Слонов](https://up.htmlacademy.ru/htmlcss/29/user/1130303).
 
 ---
 

@@ -1,163 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <link href="normalize.css" rel="stylesheet">
-      <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-  	<header>
-  		<nav class="navigation">
-  		<a class="nerds-logo" href="index.html">
-  			<img src="https://via.placeholder.com/150x100" alt="Логотип Нёрдс">
-  		</a>
-  			<div class="main-navigation-wrapper">
-        <div class="container"> 
-        <ul class="navigation-list">
-          <li><a href="blank.html">СТУДИЯ</a></li>
-          <li><a href="blank.html">КЛИЕТЫ</a></li>
-          <li><a href="catalog.html">МАГАЗИН</a></li>
-          <li><a href="blank.html">КОНТАКТЫ</a></li>
-        </ul>
-        <div class="user-navigation">
-         <a class="basket" href="#">КОРЗИНА</a>
-        </div>
-        </div>
-      </div>
-  		</nav>
-  	</header>
-    <main>
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-<!-- Диапазон цен -->
-     <span class="price">СТОИМОСТЬ:</span>
-     <div class="range">
-        <input type="range" id="pricing" name="pricing" min="0" max="15000" step="1000" value="0"> 
-        <span class="from range-value">ОТ</span>
-        <span class="value-zero range-value">0</span>
-        <span class="to range-value">ДО</span>
-        <span class="value15000 range-value">15 000</span>
-      </div>
-<!-- Радио кнопка -->
-     <span class="grid">СЕТКА:</span>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+ <header>
+  <nav class="navigation">
+    <a class="nerds-logo" href="index.html">
+     <img src="img/svg-files/nerds-logo_(1).svg" width="160" height="66" alt="Логотип Нёрдс">
+   </a>
+   <div class="main-navigation-wrapper">
+     <div class="container">  
+       <ul class="navigation-list">
+        <li><a href="blank.html">СТУДИЯ</a></li>
+        <li><a href="blank.html">КЛИЕТЫ</a></li>
+        <li><a href="catalog.html">МАГАЗИН</a></li>
+        <li><a href="blank.html">КОНТАКТЫ</a></li>
+      </ul>
+      <div class="user-navigation">
+        <div class="cart-icon">
+         <img src="img/svg-files/cart-icon.svg" width="15" height="15" alt="">
+       </div>
+       <a class="basket" href="#">КОРЗИНА</a>
+     </div>
+   </div>
+ </div>
+</nav>
+</header>
+<main class="catalog-main">
+  <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+  <!-- Диапазон цен -->
+  <span class="price">СТОИМОСТЬ:</span>
+  <div class="range">
+    <input type="range" id="pricing" name="pricing" min="0" max="15000" step="1000" value="9000"> 
+    <span class="from range-value">ОТ</span>
+    <span class="value-zero range-value">0</span>
+    <span class="to range-value">ДО</span>
+    <span class="value15000 range-value">15 000</span>
+  </div>
+  <!-- Радио кнопка -->
+  <span class="grid">СЕТКА:</span>
   <div class="radio-button">
     <label>
       <input type="radio" name="adaptive" value="adaptive" checked> Адаптивная
-        </label>
-      <br>
+    </label>
+    <br>
     <label>
       <input type="radio" name="fixed" value="fixed"> Фиксированная
-       </label>
-      <br>
+    </label>
+    <br>
     <label>
       <input type="radio" name="flexible" value="flexible"> Резиновая
-       </label>
+    </label>
   </div>
-<!-- Чекбокс -->
-     <span class="features">ОСОБЕННОСТИ:</span>
+  <!-- Чекбокс -->
+  <span class="features">ОСОБЕННОСТИ:</span>
   <div class="checkbox">
     <input type="checkbox" name="slider" id="slider" checked>
-      <label for="slider">Слайдер</label>
+    <label for="slider">Слайдер</label>
     <input type="checkbox" name="advantages-block" id="advantages-block">
-      <label for="advantages-block">Блок преимуществ</label>
+    <label for="advantages-block">Блок преимуществ</label>
     <input type="checkbox" name="news" id="news" checked>
-      <label for="news">Новости</label>
+    <label for="news">Новости</label>
     <input type="checkbox" name="gallery" id="gallery">
-      <label for="gallery">Галерея</label>
+    <label for="gallery">Галерея</label>
     <input type="checkbox" name="basket" id="basket">
-      <label for="basket">Корзина</label>
+    <label for="basket">Корзина</label>
   </div>
   <a class="show gray-button" href="https://echo.htmlacademy.ru/">ПОКАЗАТЬ
-    </a>
-     <span class="sort">СОРТИРОВАТЬ</span>
-      <ul class="sort-list">
-        <li class="by-price">
-          ПО ЦЕНЕ
-        </li>
-        <li class="by-type">
-          ПО ТИПУ
-        </li>
-        <li class="by-name">
-          ПО НАЗВАНИЮ
-        </li>
-      </ul>
-      <button class="down-button"></button>
-      <button class="up-button"></button>
-<!-- Картинки -->
-      <section class="templates">
-        <h2 class="template-hidden">Шаблоны</h2>
-          <ul>
-        <li class="Sedona">
-          <a><img src="https://via.placeholder.com/150x100" alt="Sedona">
-            </a>
-        </li>
-        <li class="Pink">
-          <a><img src="https://via.placeholder.com/150x100" alt="Pink">
-            </a>
-        </li>
-        <li class="Borodinski">
-          <a><img src="https://via.placeholder.com/150x100" alt="Borodinski">
-            </a>
-        </li>
-        <li class="Mishka">
-          <a><img src="https://via.placeholder.com/150x100" alt="Mishka">
-            </a>
-        </li>
-        <li class="Aplus">
-          <a><img src="https://via.placeholder.com/150x100" alt="Aplus">
-            </a>
-        </li>
-        <li class="Kvast">
-          <a><img src="https://via.placeholder.com/150x100" alt="Kvast">
-            </a>
-        </li>
-          </ul>
-      </section>
-   
-      <ul class="pages">
-      <li class="first-page gray-button">
-        <a>1</a>
+  </a>
+  <span class="sort">СОРТИРОВАТЬ:</span>
+  <ul class="sort-list">
+    <li class="by-price sort-by">
+      <a href="#">ПО ЦЕНЕ</a>
+    </li>
+    <li class="by-type sort-by">
+      <a href="#">ПО ТИПУ</a>
+    </li>
+    <li class="by-name sort-by">
+      <a href="#">ПО НАЗВАНИЮ</a>
+    </li>
+  </ul>
+  <button class="down-button"></button>
+  <button class="up-button"></button>
+  <!-- Картинки -->
+  <section class="templates">
+    <h2 class="template-hidden">Шаблоны</h2>
+    <ul class="templates-list">
+      <li class="Sedona">
+        <a><img src="img/jpg-files/img-sedona_1.jpg" width="358" alt="Sedona">
+        </a>
       </li>
-      <li class="second-page gray-button">
-        <a href="#">2</a>
+      <li class="Pink">
+        <a><img src="img/jpg-files/img-pink_1.jpg" width="358" alt="Pink">
+        </a>
       </li>
-      <li class="third-page gray-button">
-        <a href="#">3</a>
+      <li class="Borodinski">
+        <a><img src="img/jpg-files/img-barbershop_1.jpg" width="358" alt="Borodinski">
+        </a>
+      </li>
+      <li class="Mishka">
+        <a><img src="img/jpg-files/img-mishka_1.jpg" width="358" alt="Mishka">
+        </a>
+      </li>
+      <li class="Aplus">
+        <a><img src="img/jpg-files/img-aplus_1.jpg" width="358" alt="Aplus">
+        </a>
+      </li>
+      <li class="Kvast">
+        <a><img src="img/jpg-files/img-kvast_1.jpg" width="358" alt="Kvast">
+        </a>
       </li>
     </ul>
-     <a class="next-page gray-button" href="#">СЛЕДУЮЩАЯ</a>
-     
-    </main>
-    <footer>
-<!-- Контактная информация -->
-<section class="contact-info">
-  <h2 class="site-title">NЁRDS DESIGN STUDIO</h2>
-  <p class="contact-information">
-      191186, Санкт-Петербург,<br>
-      ул. Б. Конюшенная, д. 19/8 <br>
-      тел. +7 (812) 275-75-75
-    </p>
-    <a class="contact-us" href="#">НАПИШИТЕ НАМ</a>
+  </section>
+
+  <ul class="pages">
+    <li class="first-page gray-button">
+      <a>1</a>
+    </li>
+    <li class="second-page gray-button">
+      <a href="#">2</a>
+    </li>
+    <li class="third-page gray-button">
+      <a href="#">3</a>
+    </li>
+  </ul>
+  <a class="next-page gray-button" href="#">СЛЕДУЮЩАЯ</a>
+
+</main>
+<footer>
+ <!-- Контактная информация -->
+ <section class="contact-info">
+   <h2 class="site-title">NЁRDS DESIGN STUDIO</h2>
+   <p class="contact-information">
+    191186, Санкт-Петербург,<br>
+    ул. Б. Конюшенная, д. 19/8 <br>
+    тел. +7 (812) 275-75-75
+  </p>
+  <a class="contact-us" href="#">НАПИШИТЕ НАМ</a>
 </section>
 <!-- Соцсети -->
-  <div class="social-media">
-      <a class="VK social-media-item" href="#">VK</a>
-      <a class="FaceBook social-media-item" href="#">FaceBook</a>
-      <a class="Instagram social-media-item" href="#">Instagram</a>
-    </div>
-    <div class="offer">
-      <p class="proposal">Давайте дружить, это выгодно!</p><br>
-      <p class="discount10">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-    </footer>
-    <section class="modal">
-      <h2 class="personal-area" >ЛИЧНЫЙ КАБИНЕТ</h2>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <label for="login-field">Ваше имя:</label><br>
-      <input type="text" name="login" id="login-field" value="Имя Фамилия">
-        </form>
-        <button class="close" type="button">Закрыть</button>
-    </section>
-  </body>
-  </html>
+<div class="social-media">
+  <a class="VK social-media-item" href="#"><img src="img/svg-files/vk-icon.svg" width="26" height="15" alt=""></a>
+  <a class="FaceBook social-media-item" href="#"><img src="img/svg-files/fb-icon.svg" width="12" height="22" alt=""></a>
+  <a class="Instagram social-media-item" href="#"><img src="img/svg-files/insta-icon.svg" width="21" height="21" alt=""></a>
+</div>
+<div class="offer">
+ <p class="proposal">Давайте дружить, это выгодно!</p><br>
+ <p class="discount10">Скидка 10% для друзей из социальных сетей.</p>
+</div>
+</footer>
+<section class="modal">
+ <h2 class="personal-area" >ЛИЧНЫЙ КАБИНЕТ</h2>
+ <form action="https://echo.htmlacademy.ru/courses" method="post">
+  <div class="log-in">
+    <label for="login-field">Ваше имя:</label><br>
+    <input type="text" name="login" id="login-field" value="Имя Фамилия">
+  </div>
+  <div class="log-in invalid-value">
+    <label for="invalid-value">Ваше имя:</label><br>
+    <input type="text" name="login" id="invalid-value" value="Введенный текст">
+  </div>
+</form>
+<button class="close" type="button"><img src="img/svg-files/close-cross.svg" width="21" height="21" alt="Закрыть"></button>
+</section>
+</body>
+</html>

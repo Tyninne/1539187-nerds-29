@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
@@ -7,14 +7,14 @@
   <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
- <header>
+<body class="page-body inner-page">
+ <header class="main-header">
   <nav class="navigation">
     <a class="nerds-logo" href="index.html">
-     <img src="img/svg-files/nerds-logo_(1).svg" width="160" height="66" alt="Логотип Нёрдс">
-   </a>
-   <div class="main-navigation-wrapper">
-     <div class="container">  
+      <img src="img/svg-files/nerds-logo_(1).svg" width="160" height="66" alt="Логотип Нёрдс">
+    </a>
+    <div class="main-header-bar">
+      <div class="main-navigation-wrapper">
        <ul class="navigation-list">
         <li><a href="blank.html">СТУДИЯ</a></li>
         <li><a href="blank.html">КЛИЕТЫ</a></li>
@@ -31,49 +31,62 @@
  </div>
 </nav>
 </header>
-<main class="catalog-main">
+<main class="catalog-main container">
   <h1 class="catalog-title">Магазин готовых шаблонов</h1>
   <!-- Диапазон цен -->
-  <span class="price">СТОИМОСТЬ:</span>
-  <div class="range">
-    <input type="range" id="pricing" name="pricing" min="0" max="15000" step="1000" value="9000"> 
-    <span class="from range-value">ОТ</span>
-    <span class="value-zero range-value">0</span>
-    <span class="to range-value">ДО</span>
-    <span class="value15000 range-value">15 000</span>
-  </div>
-  <!-- Радио кнопка -->
-  <span class="grid">СЕТКА:</span>
-  <div class="radio-button">
-    <label>
-      <input type="radio" name="adaptive" value="adaptive" checked> Адаптивная
-    </label>
-    <br>
-    <label>
-      <input type="radio" name="fixed" value="fixed"> Фиксированная
-    </label>
-    <br>
-    <label>
-      <input type="radio" name="flexible" value="flexible"> Резиновая
-    </label>
-  </div>
-  <!-- Чекбокс -->
-  <span class="features">ОСОБЕННОСТИ:</span>
+  <section class="catalog-main-content">
+    <div class="filters">
+      <fieldset class="price">
+        <legend class="price-title">СТОИМОСТЬ:</legend>
+        <div class="range">
+          <input type="range" id="pricing" name="pricing" min="0" max="15000" step="1000" value="9000"> 
+          <span class="from range-value">ОТ</span>
+          <span class="value-zero range-value">0</span>
+          <span class="to range-value">ДО</span>
+          <span class="value15000 range-value">15 000</span>
+        </div>
+      </fieldset>
+      <!-- Радио кнопка -->
+      <fieldset class="grid">
+        <legend class="grid-title">СЕТКА:</legend>
+        <ul class="radio-button">
+          <li>
+            <label>
+            <input type="radio" name="adaptive" value="adaptive" checked> Адаптивная
+          </label>
+          </li>
+        <li> 
+          <label>
+          <input type="radio" name="fixed" value="fixed"> Фиксированная
+        </label>
+      </li>
+      <li><label>
+        <input type="radio" name="flexible" value="flexible"> Резиновая
+      </label>
+    </li>
+  </ul>
+</fieldset>
+<!-- Чекбокс -->
+<fieldset class="features">
+  <legend class="features-title">ОСОБЕННОСТИ:</legend>
   <div class="checkbox">
     <input type="checkbox" name="slider" id="slider" checked>
-    <label for="slider">Слайдер</label>
+    <label for="slider">Слайдер</label><br>
     <input type="checkbox" name="advantages-block" id="advantages-block">
-    <label for="advantages-block">Блок преимуществ</label>
+    <label for="advantages-block">Блок преимуществ</label><br>
     <input type="checkbox" name="news" id="news" checked>
-    <label for="news">Новости</label>
+    <label for="news">Новости</label><br>
     <input type="checkbox" name="gallery" id="gallery">
-    <label for="gallery">Галерея</label>
+    <label for="gallery">Галерея</label><br>
     <input type="checkbox" name="basket" id="basket">
-    <label for="basket">Корзина</label>
+    <label for="basket">Корзина</label><br>
   </div>
   <a class="show gray-button" href="https://echo.htmlacademy.ru/">ПОКАЗАТЬ
   </a>
-  <span class="sort">СОРТИРОВАТЬ:</span>
+</fieldset>
+</div>
+<div class="sort">
+  <span class="sort-title">СОРТИРОВАТЬ:</span>
   <ul class="sort-list">
     <li class="by-price sort-by">
       <a href="#">ПО ЦЕНЕ</a>
@@ -87,54 +100,60 @@
   </ul>
   <button class="down-button"></button>
   <button class="up-button"></button>
-  <!-- Картинки -->
-  <section class="templates">
-    <h2 class="template-hidden">Шаблоны</h2>
+</div>
+<!-- Картинки -->
+<section class="content">
+  <div class="templates">
+    <h2 class="hidden">Шаблоны</h2>
     <ul class="templates-list">
-      <li class="Sedona">
+      <li class="Sedona template-item">
         <a><img src="img/jpg-files/img-sedona_1.jpg" width="358" alt="Sedona">
         </a>
       </li>
-      <li class="Pink">
+      <li class="Pink template-item">
         <a><img src="img/jpg-files/img-pink_1.jpg" width="358" alt="Pink">
         </a>
       </li>
-      <li class="Borodinski">
+      <li class="Borodinski template-item">
         <a><img src="img/jpg-files/img-barbershop_1.jpg" width="358" alt="Borodinski">
         </a>
       </li>
-      <li class="Mishka">
+      <li class="Mishka template-item">
         <a><img src="img/jpg-files/img-mishka_1.jpg" width="358" alt="Mishka">
         </a>
       </li>
-      <li class="Aplus">
+      <li class="Aplus template-item">
         <a><img src="img/jpg-files/img-aplus_1.jpg" width="358" alt="Aplus">
         </a>
       </li>
-      <li class="Kvast">
+      <li class="Kvast template-item">
         <a><img src="img/jpg-files/img-kvast_1.jpg" width="358" alt="Kvast">
         </a>
       </li>
     </ul>
-  </section>
-
-  <ul class="pages">
-    <li class="first-page gray-button">
-      <a>1</a>
-    </li>
-    <li class="second-page gray-button">
-      <a href="#">2</a>
-    </li>
-    <li class="third-page gray-button">
-      <a href="#">3</a>
-    </li>
-  </ul>
-  <a class="next-page gray-button" href="#">СЛЕДУЮЩАЯ</a>
-
+  </div>
+  <div class="pagination">
+    <ul class="pages">
+      <li class="first-page gray-button">
+        <a>1</a>
+      </li>
+      <li class="second-page gray-button">
+        <a href="#">2</a>
+      </li>
+      <li class="third-page gray-button">
+        <a href="#">3</a>
+      </li>
+    </ul>
+    <a class="next-page gray-button" href="#">СЛЕДУЮЩАЯ</a>
+  </div>
+</section>
+</section>
 </main>
-<footer>
+<footer class="main-footer">
  <!-- Контактная информация -->
- <section class="contact-info">
+ <div class="map">
+  <img src="img/png-files/map_1.png" width="1440" height="416">
+ <div class="contact-info">
    <h2 class="site-title">NЁRDS DESIGN STUDIO</h2>
    <p class="contact-information">
     191186, Санкт-Петербург,<br>
@@ -142,16 +161,19 @@
     тел. +7 (812) 275-75-75
   </p>
   <a class="contact-us" href="#">НАПИШИТЕ НАМ</a>
-</section>
-<!-- Соцсети -->
-<div class="social-media">
-  <a class="VK social-media-item" href="#"><img src="img/svg-files/vk-icon.svg" width="26" height="15" alt=""></a>
-  <a class="FaceBook social-media-item" href="#"><img src="img/svg-files/fb-icon.svg" width="12" height="22" alt=""></a>
-  <a class="Instagram social-media-item" href="#"><img src="img/svg-files/insta-icon.svg" width="21" height="21" alt=""></a>
 </div>
-<div class="offer">
- <p class="proposal">Давайте дружить, это выгодно!</p><br>
- <p class="discount10">Скидка 10% для друзей из социальных сетей.</p>
+</div>
+<!-- Соцсети -->
+<div class="footer-wrapper">
+  <div class="social-media">
+    <a class="VK social-media-item" href="#"><img src="img/svg-files/vk-icon.svg" width="26" height="15" alt=""></a>
+    <a class="FaceBook social-media-item" href="#"><img src="img/svg-files/fb-icon.svg" width="12" height="22" alt=""></a>
+    <a class="Instagram social-media-item" href="#"><img src="img/svg-files/insta-icon.svg" width="21" height="21" alt=""></a>
+  </div>
+  <div class="offer">
+   <p class="proposal">Давайте дружить, это выгодно!</p><br>
+   <p class="discount10">Скидка 10% для друзей из социальных сетей.</p>
+ </div>
 </div>
 </footer>
 <section class="modal">
